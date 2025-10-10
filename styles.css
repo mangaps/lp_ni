@@ -215,8 +215,9 @@ p {
 }
 
 .hero__actions {
-
-  /* Consolidar regra única para .footer__grid */
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 @media (min-width: 640px) {
@@ -267,12 +268,16 @@ p {
 
 @media (max-width: 600px) {
   .hero__actions {
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: column; /* já é padrão, mas mantemos explícito */
+    gap: 5px;
   }
   .hero__actions .btn {
     width: 100%;
     flex: unset;
+  }
+  /* Fallback para browsers sem suporte a gap em flex */
+  .hero__actions .btn + .btn {
+    margin-top: 0px;
   }
   .profile__image img {
     width: 100%;
@@ -285,16 +290,7 @@ p {
   }
 }
 
-@media (max-width: 600px) {
-  .hero__actions {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .hero__actions .btn {
-    width: 100%;
-    flex: unset;
-  }
-}
+/* bloco duplicado removido: consolidamos o mobile acima */
 
 .btn-hero:hover {
   transform: translateY(-2px);
@@ -540,8 +536,9 @@ p {
 }
 @media (max-width: 600px) {
   .hero__actions {
+    display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
   }
   .hero__actions .btn {
     width: 100%;
@@ -607,12 +604,8 @@ p {
 
 @media (min-width: 768px) {
   .hero__actions {
-    gap: 20px;
-    display: flex;
+    gap: 20px; /* aumenta o respiro no tablet/desktop */
   }
 }
 
-.hero__actions .btn {
-  width: 100%;
-  min-width: unset;
-}
+/* Regra global indevida removida; controle de largura dos botões fica no mobile */
