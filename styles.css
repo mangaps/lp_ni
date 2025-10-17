@@ -612,4 +612,58 @@ p {
   }
 }
 
+/* Language Toggle */
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: rgba(245, 247, 250, 0.7);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(245, 247, 250, 0.9);
+}
+
+.lang-btn.active {
+  background: rgba(245, 194, 107, 0.2);
+  border-color: rgba(245, 194, 107, 0.5);
+  color: var(--gold);
+}
+
+.flag {
+  font-size: 1rem;
+}
+
+/* Language Display Rules */
+.lang-en {
+  display: none;
+}
+
+.en .lang-pt {
+  display: none;
+}
+
+.en .lang-en {
+  display: revert;
+}
+
 /* Regra global indevida removida; controle de largura dos botões fica no mobile */
