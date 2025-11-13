@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="variables.css" />
   <link rel="stylesheet" href="styles.css" />
   
   <!-- Google tag (gtag.js) -->
@@ -23,15 +24,24 @@
 <body>
   <div class="page">
     <section class="section hero">
-      <div class="language-toggle">
-        <button class="lang-btn active" data-lang="pt">
-          <span class="flag">🇧🇷</span>
-          <span>PT</span>
-        </button>
-        <button class="lang-btn" data-lang="en">
-          <span class="flag">🇺🇸</span>
-          <span>EN</span>
-        </button>
+      <div class="header-nav">
+        <div class="nav-links">
+          <a class="nav-link" href="cases.html" data-event="nav_cases">
+            <i data-lucide="file-text"></i>
+            <span class="lang-pt">Cases</span>
+            <span class="lang-en">Cases</span>
+          </a>
+        </div>
+        <div class="language-toggle">
+          <button class="lang-btn active" data-lang="pt">
+            <span class="flag">🇧🇷</span>
+            <span>PT</span>
+          </button>
+          <button class="lang-btn" data-lang="en">
+            <span class="flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+        </div>
       </div>
   <div class="hero__overlay" style="background-image: url('assets/photo-1757132720625-7143774d7621.avif');"></div>
       <div class="container">
