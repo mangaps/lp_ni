@@ -629,19 +629,22 @@ p {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
-  color: rgba(245, 247, 250, 0.7);
+  color: rgba(245, 247, 250, 0.9);
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
   backdrop-filter: blur(10px);
+  font-family: inherit;
 }
 
-.nav-link:hover {
-  background: rgba(255, 255, 255, 0.15);
+.nav-link:hover,
+.nav-link:focus {
+  background: rgba(255, 255, 255, 0.2);
   color: var(--primary-foreground);
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
 }
 
 .nav-link i {
@@ -658,12 +661,14 @@ p {
   }
   
   .nav-link {
-    padding: 6px 10px;
+    padding: 8px 10px;
     font-size: 0.8rem;
+    gap: 4px;
   }
   
-  .nav-link span {
-    display: none;
+  .nav-link i {
+    width: 16px;
+    height: 16px;
   }
 }
 
