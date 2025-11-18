@@ -302,17 +302,18 @@ a {
 }
 
 .share-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
+  gap: 6px;
+  padding: 8px 14px;
   border-radius: 8px;
   background: transparent;
   border: 1px solid rgba(44, 95, 111, 0.2);
   color: var(--text-medium);
   transition: var(--transition);
   text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .share-btn:hover {
@@ -323,8 +324,12 @@ a {
 }
 
 .share-btn i {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+}
+
+.share-text {
+  display: none;
 }
 
 .share-btn.whatsapp:hover {
@@ -337,6 +342,12 @@ a {
   background: #0077B5;
   border-color: #0077B5;
   color: var(--white);
+}
+
+@media (min-width: 640px) {
+  .share-text {
+    display: inline;
+  }
 }
 
 /* Link do logo */
@@ -523,77 +534,6 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   align-self: flex-start;
-}
-
-/* ===== SOCIAL SHARE SECTION ===== */
-.social-share {
-  padding: 40px 0;
-  border-top: 1px solid rgba(44, 95, 111, 0.1);
-  margin-top: 40px;
-}
-
-.share-container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.share-container h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin: 0 0 20px 0;
-}
-
-.share-buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.share-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: var(--transition);
-  border: 2px solid;
-}
-
-.share-btn i {
-  width: 18px;
-  height: 18px;
-}
-
-.share-btn.linkedin {
-  background: #0077B5;
-  color: white;
-  border-color: #0077B5;
-}
-
-.share-btn.linkedin:hover {
-  background: #006399;
-  border-color: #006399;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px -8px rgba(0, 119, 181, 0.4);
-}
-
-.share-btn.whatsapp {
-  background: #25D366;
-  color: white;
-  border-color: #25D366;
-}
-
-.share-btn.whatsapp:hover {
-  background: #1EBE57;
-  border-color: #1EBE57;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px -8px rgba(37, 211, 102, 0.4);
 }
 
 /* ===== CTA SECTION ===== */
