@@ -17,7 +17,7 @@ a {
 }
 
 .container {
-  width: min(900px, 90vw);
+  width: min(1000px, 90vw);
   margin: 0 auto;
   padding: 0 20px;
 }
