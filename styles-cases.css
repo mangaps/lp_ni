@@ -206,6 +206,64 @@ a {
   color: var(--text-dark);
 }
 
+.article-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.article-section ul {
+  margin: 20px 0;
+  padding-left: 30px;
+  line-height: 1.8;
+}
+
+.article-section ul li {
+  margin: 12px 0;
+  color: var(--text-dark);
+}
+
+.deliverable-box ul,
+.benefit-box ul {
+  margin: 15px 0 0 0;
+  padding-left: 24px;
+}
+
+.deliverable-box ul li,
+.benefit-box ul li {
+  margin: 8px 0;
+  line-height: 1.7;
+}
+
+/* Deliverable boxes with icons */
+.deliverable-box.with-icon {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.icon-box {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 12px;
+  color: var(--primary-purple);
+  box-shadow: 0 2px 8px rgba(139, 90, 150, 0.1);
+}
+
+.content-box {
+  flex: 1;
+}
+
+.content-box h4 {
+  margin-top: 0;
+}
+
 /* ===== ELEMENTOS ADICIONAIS DO ARTIGO ===== */
 .article-meta-header {
   display: flex;
@@ -569,28 +627,25 @@ a {
 /* ===== AUDIENCE TOGGLE ===== */
 .audience-toggle {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 40px 0 30px;
-  padding: 6px;
-  background: rgba(44, 95, 111, 0.05);
+  gap: 8px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 50px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  border: 1px solid rgba(44, 95, 111, 0.15);
 }
 
 .toggle-btn {
-  padding: 12px 28px;
+  padding: 8px 20px;
   border: none;
   background: transparent;
   border-radius: 50px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--primary-teal);
   cursor: pointer;
   transition: var(--transition);
   font-family: 'Inter', sans-serif;
+  white-space: nowrap;
 }
 
 .toggle-btn:hover {
@@ -669,6 +724,23 @@ a {
   color: var(--white);
   border-radius: 12px;
   margin: 60px 0 40px;
+  position: relative;
+}
+
+.cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: var(--white);
+}
+
+.cta-icon svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .cta-section h2 {
