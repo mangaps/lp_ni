@@ -493,13 +493,11 @@ a {
   transform: scale(1.05);
 }
 
-/* Case Study Badge */
-.case-badge {
+/* Content Type Label (Chapéu) */
+.content-type-label {
   position: absolute;
   top: 12px;
-  right: 12px;
-  background: var(--primary-purple);
-  color: var(--white);
+  left: 12px;
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.75rem;
@@ -507,11 +505,23 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   z-index: 2;
-  box-shadow: 0 2px 8px rgba(139, 90, 150, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
 }
 
-.article-preview.case-study:hover .case-badge {
-  background: var(--accent-cyan);
+.case-label {
+  background: var(--primary-purple);
+  color: var(--white);
+}
+
+.article-label {
+  background: var(--secondary-teal);
+  color: var(--white);
+}
+
+.article-preview:hover .content-type-label {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Placeholder para artigos futuros */
@@ -551,15 +561,6 @@ a {
 .article-date {
   color: var(--primary-purple);
   font-weight: 500;
-}
-
-.article-category {
-  background: var(--primary-purple);
-  color: var(--white);
-  padding: 2px 10px;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 0.75rem;
 }
 
 .article-reading-time {
