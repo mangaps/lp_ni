@@ -1,396 +1,257 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quando a distribuição decide eleições (e campanhas de marketing) | Narrativa Social</title>
-  <meta name="description" content="Awareness é uma métrica comum e decisiva. Entenda o valor da distribuição orgânica e como ela pode ser mais poderosa que o investimento financeiro." />
-  
-  <!-- SEO Meta Tags -->
-  <meta name="keywords" content="awareness, distribuição, mídia orgânica, earned media, marketing político, comunicação estratégica, analytics" />
-  <meta name="author" content="Henrique Paludetto - Narrativa Social" />
-  <meta name="robots" content="index, follow" />
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Quando a distribuição decide eleições (e campanhas de marketing)" />
-  <meta property="og:description" content="Awareness é uma métrica comum e decisiva. Entenda o valor da distribuição orgânica e como ela pode ser mais poderosa que o investimento financeiro." />
-  <meta property="og:url" content="https://narrativasocial.com/quando-distribuicao-decide-eleicoes.html" />
-  <meta property="og:site_name" content="Narrativa Social" />
-  <meta property="article:published_time" content="2025-11-18T00:00:00Z" />
-  <meta property="article:author" content="Henrique Paludetto" />
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Quando a distribuição decide eleições (e campanhas de marketing)" />
-  <meta name="twitter:description" content="Awareness é uma métrica comum e decisiva. Entenda o valor da distribuição orgânica." />
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://narrativasocial.com/quando-distribuicao-decide-eleicoes.html" />
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="variables.css" />
-  <link rel="stylesheet" href="styles-cases.css" />
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2D0FBN1YD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-H2D0FBN1YD');
-  </script>
-  
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Quando a distribuição decide eleições (e campanhas de marketing)",
-    "description": "Awareness é uma métrica comum e decisiva. Entenda o valor da distribuição orgânica e como ela pode ser mais poderosa que o investimento financeiro.",
-    "author": {
-      "@type": "Person",
-      "name": "Henrique Paludetto",
-      "url": "https://www.linkedin.com/in/henriquepaludetto"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Narrativa Social",
-      "url": "https://narrativasocial.com"
-    },
-    "datePublished": "2025-11-18",
-    "dateModified": "2025-11-18"
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Artigo: Quando a distribuição decide eleições | Narrativa Social</title>
+<meta name="description" content="Como awareness orgânico pode ser mais poderoso que investimento financeiro. Um estudo sobre distribuição e vantagem competitiva." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  .article-hero {
+    min-height: 50vh;
+    /* background: linear-gradient(135deg, rgba(200,137,42,0.06) 0%, transparent 70%); */
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 1rem 2.5rem 1rem;
+    max-width: 860px; margin: 0 auto;
+    position: relative;
   }
-  </script>
+  .article-hero::before {
+    content: '';
+    position: absolute; top: -40px; right: -200px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(200,137,42,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .article-hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.75rem;
+    max-width: 680px;
+  }
+  .article-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin-bottom: 0;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .article-content {
+    max-width: 860px; margin: 0 auto;
+    /* padding: 0 2.5rem; */
+  }
+  
+  section {
+    padding: 1rem 2.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  
+  .article-section {
+    margin-bottom: 1.75rem;
+  }
+  .article-section h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .article-section h3 {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .article-section p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    max-width: 740px;
+  }
+  .article-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0.75rem;
+  }
+  .article-section ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  .article-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  @media (max-width: 680px) {
+    .article-hero {
+      padding: 3rem 2.5rem 2rem;
+      min-height: auto;
+    }
+    .article-hero h1 {
+      font-size: 1.8rem;
+    }
+  }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2D0FBN1YD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H2D0FBN1YD');
+</script>
 </head>
 <body>
-  <div class="page">
-    <!-- Header Simples com Logo -->
-    <header class="simple-header">
-      <div class="container">
-        <div class="header-content">
-          <div class="brand-logo">
-            <a href="index.html">
-              <div class="logo-icon"></div>
-              <span class="logo-text">Narrativa Social</span>
-            </a>
-          </div>
-          
-          <div class="language-toggle">
-            <button class="lang-btn active" data-lang="pt">
-              <span class="flag">🇧🇷</span>
-              <span>PT</span>
-            </button>
-            <button class="lang-btn" data-lang="en">
-              <span class="flag">🇺🇸</span>
-              <span>EN</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Visual Hero -->
-      <div class="hero-visual">
-        <div class="visual-overlay"></div>
-        <div class="visual-content">
-          <h1 class="paper-title">
-            <span class="lang-pt">Quando a distribuição decide eleições (e campanhas de marketing)</span>
-            <span class="lang-en">When distribution decides elections (and marketing campaigns)</span>
-          </h1>
-          <p class="paper-subtitle">
-            <span class="lang-pt">Como awareness orgânico pode ser mais poderoso que investimento financeiro</span>
-            <span class="lang-en">How organic awareness can be more powerful than financial investment</span>
-          </p>
-        </div>
-      </div>
-    </header>
 
-    <!-- Artigo Completo -->
-    <main class="paper-content">
-      <div class="container">
-        <article class="paper-article">
-          <section class="paper-section">
-            <p>
-              <span class="lang-pt">Awareness é uma métrica comum e decisiva nos relatórios de campanhas de comunicação. Em essência, ela indica a extensão da mensagem, ou seja: a campanha chegou ao público certo? Em que escala?</span>
-              <span class="lang-en">Awareness is a common and decisive metric in communication campaign reports. In essence, it indicates the reach of the message: did the campaign reach the right audience? At what scale?</span>
-            </p>
-            
-            <p>
-              <span class="lang-pt">Tradicionalmente, usamos indicadores quantitativos como número de matérias, impressões, alcance e volume de menções. Eles são úteis, mas deixam perguntas estratégicas no ar:</span>
-              <span class="lang-en">Traditionally, we use quantitative indicators such as number of articles, impressions, reach, and mention volume. They are useful, but leave strategic questions in the air:</span>
-            </p>
-
-            <ul>
-              <li>
-                <span class="lang-pt">As pessoas lembraram da mensagem?</span>
-                <span class="lang-en">Did people remember the message?</span>
-              </li>
-              <li>
-                <span class="lang-pt">Ela gerou engajamento emocional?</span>
-                <span class="lang-en">Did it generate emotional engagement?</span>
-              </li>
-              <li>
-                <span class="lang-pt">Mudou percepções?</span>
-                <span class="lang-en">Did it change perceptions?</span>
-              </li>
-              <li>
-                <span class="lang-pt">Influenciou comportamento?</span>
-                <span class="lang-en">Did it influence behavior?</span>
-              </li>
-            </ul>
-            
-            <p>
-              <span class="lang-pt">A ausência desses dados qualitativos pode fazer o awareness parecer frágil. Mas, quando analisado com inteligência e operado com estratégia, ele se torna uma arma poderosa da comunicação moderna.</span>
-              <span class="lang-en">The absence of this qualitative data can make awareness seem fragile. But when analyzed with intelligence and operated strategically, it becomes a powerful weapon of modern communication.</span>
-            </p>
-          </section>
-
-          <section class="paper-section">
-            <h2>
-              <span class="lang-pt">Dinheiro</span>
-              <span class="lang-en">Money</span>
-            </h2>
-            
-            <p>
-              <span class="lang-pt">O ponto central não é só medir awareness, mas entender o valor dele. Quanto você paga para gerar cada unidade de atenção.</span>
-              <span class="lang-en">The central point is not just measuring awareness, but understanding its value. How much you pay to generate each unit of attention.</span>
-            </p>
-            
-            <p>
-              <span class="lang-pt">Na mídia paga, essa conta é explícita: usamos o famoso CPM (Custo por Mil Impressões). Se o conteúdo é bom, relevante e culturalmente alinhado ao público, as plataformas têm menos dificuldade para distribuí-lo e o CPM diminui.</span>
-              <span class="lang-en">In paid media, this calculation is explicit: we use the famous CPM (Cost per Thousand Impressions). If the content is good, relevant, and culturally aligned with the audience, platforms have less difficulty distributing it and the CPM decreases.</span>
-            </p>
-
-            <p>
-              <span class="lang-pt">Se o conteúdo é fraco, ainda assim é possível "forçar" awareness: basta investir mais verba.</span>
-              <span class="lang-en">If the content is weak, it's still possible to "force" awareness: just invest more budget.</span>
-            </p>
-
-            <p>
-              <span class="lang-pt">Mas na mídia orgânica, não existe esse atalho.</span>
-              <span class="lang-en">But in organic media, there is no such shortcut.</span>
-            </p>
-          </section>
-
-          <section class="paper-section">
-            <h2>
-              <span class="lang-pt">Orgânico</span>
-              <span class="lang-en">Organic</span>
-            </h2>
-            
-            <p>
-              <span class="lang-pt">No orgânico (imprensa, influenciadores ou perfis proprietários) a moeda não é dinheiro: é valor cultural para o público.</span>
-              <span class="lang-en">In organic media (press, influencers, or owned profiles) the currency is not money: it's cultural value for the audience.</span>
-            </p>
-            
-            <p>
-              <span class="lang-pt">Para conquistar awareness orgânico, você precisa conhecer profundamente seu público: seus medos, desejos, linguagem, repertório, contexto, códigos culturais e expectativas.</span>
-              <span class="lang-en">To achieve organic awareness, you need to deeply know your audience: their fears, desires, language, repertoire, context, cultural codes, and expectations.</span>
-            </p>
-
-            <p>
-              <span class="lang-pt">Não é possível comprar relevância: você precisa merecê-la.</span>
-              <span class="lang-en">You cannot buy relevance: you must earn it.</span>
-            </p>
-
-            <p>
-              <span class="lang-pt">Aqui, awareness se torna muito mais do que alcance. Ele se transforma em um indicador de conexão real: Se você gerou awareness orgânico, você entrou na vida das pessoas como convidado.</span>
-              <span class="lang-en">Here, awareness becomes much more than reach. It transforms into an indicator of real connection: If you generated organic awareness, you entered people's lives as an invited guest.</span>
-            </p>
-
-            <p>
-              <span class="lang-pt">E quando isso acontece, elas tendem a:</span>
-              <span class="lang-en">And when this happens, they tend to:</span>
-            </p>
-
-            <ul>
-              <li>
-                <span class="lang-pt">acreditar no que você diz</span>
-                <span class="lang-en">believe what you say</span>
-              </li>
-              <li>
-                <span class="lang-pt">comprar de você</span>
-                <span class="lang-en">buy from you</span>
-              </li>
-              <li>
-                <span class="lang-pt">defender sua marca</span>
-                <span class="lang-en">defend your brand</span>
-              </li>
-              <li>
-                <span class="lang-pt">votar em você</span>
-                <span class="lang-en">vote for you</span>
-              </li>
-            </ul>
-
-            <p>
-              <span class="lang-pt">Esse é o poder do awareness quando ele nasce do valor e não da verba.</span>
-              <span class="lang-en">This is the power of awareness when it is born from value and not from budget.</span>
-            </p>
-          </section>
-
-          <section class="paper-section">
-            <h2>
-              <span class="lang-pt">Poder</span>
-              <span class="lang-en">Power</span>
-            </h2>
-            
-            <p>
-              <span class="lang-pt">Awareness é, acima de tudo, distribuição. E quem controla a distribuição tem vantagem estratégica.</span>
-              <span class="lang-en">Awareness is, above all, distribution. And whoever controls distribution has strategic advantage.</span>
-            </p>
-            
-            <p>
-              <span class="lang-pt">Quando existe uma estratégia sólida que entende o público, ativa os meios corretos e conversa com a cultura, o conteúdo se torna familiar, gera interesse espontâneo e se espalha sem esforço adicional.</span>
-              <span class="lang-en">When there is a solid strategy that understands the audience, activates the right channels, and speaks to the culture, content becomes familiar, generates spontaneous interest, and spreads without additional effort.</span>
-            </p>
-
-            <p>
-              <span class="lang-pt">Um caso emblemático disso foi a eleição americana de 2016.</span>
-              <span class="lang-en">An emblematic case of this was the 2016 American election.</span>
-            </p>
-          </section>
-
-          <section class="paper-section">
-            <h2>
-              <span class="lang-pt">O case Trump como fenômeno de mídia (não como posicionamento político)</span>
-              <span class="lang-en">The Trump case as a media phenomenon (not as political positioning)</span>
-            </h2>
-            
-            <p>
-              <span class="lang-pt">Durante as primárias, Donald Trump gastou menos de US$ 20 milhões em propaganda paga, enquanto seus adversários ultrapassaram US$ 140 milhões. Mesmo assim, Trump dominou a atenção pública.</span>
-              <span class="lang-en">During the primaries, Donald Trump spent less than $20 million on paid advertising, while his opponents exceeded $140 million. Even so, Trump dominated public attention.</span>
-            </p>
-            
-            <p>
-              <span class="lang-pt">Por quê?</span>
-              <span class="lang-en">Why?</span>
-            </p>
-
-            <p>
-              <span class="lang-pt">Porque suas declarações controversas renderam uma avalanche de mídia espontânea: estimativas mostram que ele recebeu mais de US$ 400 milhões em "earned media" em um único mês, mais do que o dobro do segundo colocado.</span>
-              <span class="lang-en">Because his controversial statements yielded an avalanche of spontaneous media: estimates show he received over $400 million in "earned media" in a single month, more than double the second-place candidate.</span>
-            </p>
-
-            <p>
-              <span class="lang-pt">É importante distinguir as coisas:</span>
-              <span class="lang-en">It's important to distinguish things:</span>
-            </p>
-
-            <ul>
-              <li>
-                <span class="lang-pt">O comportamento da campanha foi antiético, reprovável e incluiu práticas indevidas (como o uso de dados de milhões de usuários do Facebook sem consentimento).</span>
-                <span class="lang-en">The campaign's behavior was unethical, reprehensible, and included improper practices (such as using data from millions of Facebook users without consent).</span>
-              </li>
-              <li>
-                <span class="lang-pt">Mas o mecanismo de comunicação é tecnicamente didático.</span>
-                <span class="lang-en">But the communication mechanism is technically instructive.</span>
-              </li>
-            </ul>
-
-            <p>
-              <span class="lang-pt">A campanha demonstrou, de forma extrema, como awareness orgânico massivo pode sobrepor investimento financeiro. Isso não valida a conduta. Mas evidencia o poder bruto da atenção.</span>
-              <span class="lang-en">The campaign demonstrated, in extreme form, how massive organic awareness can override financial investment. This does not validate the conduct. But it evidences the raw power of attention.</span>
-            </p>
-          </section>
-
-          <section class="paper-section">
-            <h2>
-              <span class="lang-pt">Analytics</span>
-              <span class="lang-en">Analytics</span>
-            </h2>
-            
-            <p>
-              <span class="lang-pt">Times de comunicação apoiados por analytics entendem nuances, identificam os gatilhos que geram distribuição orgânica e navegam a campanha com muito mais precisão. Eles transformam dados em vantagem competitiva — seja no mercado, seja em contextos políticos. Conte comigo!</span>
-              <span class="lang-en">Communication teams supported by analytics understand nuances, identify triggers that generate organic distribution, and navigate campaigns with much more precision. They transform data into competitive advantage — whether in the market or in political contexts. Count on me!</span>
-            </p>
-          </section>
-
-          <nav class="article-navigation">
-            <a href="cases.html" class="nav-link">
-              <i data-lucide="arrow-left"></i>
-              <span class="lang-pt">Voltar para Cases</span>
-              <span class="lang-en">Back to Cases</span>
-            </a>
-            
-            <div class="share-buttons">
-              <span class="share-label">
-                <span class="lang-pt">Compartilhe:</span>
-                <span class="lang-en">Share:</span>
-              </span>
-              <a href="#" onclick="shareOnLinkedIn()" class="share-btn linkedin" aria-label="Compartilhar no LinkedIn">
-                <i data-lucide="linkedin"></i>
-                <span class="share-text">LinkedIn</span>
-              </a>
-              <a href="#" onclick="shareOnWhatsApp()" class="share-btn whatsapp" aria-label="Compartilhar no WhatsApp">
-                <i data-lucide="message-circle"></i>
-                <span class="share-text">WhatsApp</span>
-              </a>
-            </div>
-          </nav>
-        </article>
-      </div>
-    </main>
-
-    <!-- Call to Action -->
-    <section class="cta-section">
-      <div class="container">
-        <h2>
-          <span class="lang-pt">Quer saber mais sobre estratégias de distribuição?</span>
-          <span class="lang-en">Want to know more about distribution strategies?</span>
-        </h2>
-        <p>
-          <span class="lang-pt">Entre em contato para discutir como podemos aplicar essas metodologias ao seu negócio.</span>
-          <span class="lang-en">Get in touch to discuss how we can apply these methodologies to your business.</span>
-        </p>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="https://wa.me/5511985053446?text=Ol%C3%A1,%20Henrique.%20Vi%20o%20artigo%20sobre%20distribuição%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer">
-            <i data-lucide="message-circle"></i>
-            <span class="lang-pt">Conversar sobre estratégias</span>
-            <span class="lang-en">Discuss strategies</span>
-          </a>
-          <a class="btn btn-outline" href="cases.html">
-            <i data-lucide="arrow-left"></i>
-            <span class="lang-pt">Ver mais artigos</span>
-            <span class="lang-en">See more articles</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer simples -->
-    <footer class="footer-simple">
-      <div class="container">
-        <p>© 2025 Narrativa Social. 
-          <span class="lang-pt">Todos os direitos reservados.</span>
-          <span class="lang-en">All rights reserved.</span>
-        </p>
-      </div>
-    </footer>
+<!-- NAV -->
+<nav>
+  <a href="index.html" style="text-decoration: none; color: inherit;" class="nav-logo">Narrativa<span>.</span>Social</a>
+  <div class="nav-links">
+    <a href="index.html#sobre">O que fazemos</a>
+    <a href="index.html#blog">Artigos</a>
+    <a href="https://tagarelo.com.br" target="_blank">Tagarelo</a>
+    <a href="index.html#newsletter">
+      <button class="btn-nav">Receber newsletter</button>
+    </a>
+    <a href="quando-distribuicao-decide-eleicoes-en.html" style="margin-left: 1rem; padding-left: 1rem; border-left: 1px solid var(--border); color: var(--text-muted);">EN</a>
   </div>
+</nav>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="script.js"></script>
+<!-- HERO -->
+<div class="article-hero">
+  <p class="hero-eyebrow">Artigo</p>
+  <h1>Quando a Distribuição Decide Eleições</h1>
+  <p class="article-subtitle">Como awareness orgânico pode ser mais poderoso que investimento financeiro</p>
+</div>
 
-  <script>
-    function shareOnLinkedIn() {
-      const url = encodeURIComponent(window.location.href);
-      window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank', 'width=600,height=600');
-    }
+<!-- ARTICLE CONTENT -->
+<div class="article-content">
 
-    function shareOnWhatsApp() {
-      const url = encodeURIComponent(window.location.href);
-      const text = encodeURIComponent('Quando a distribuição decide eleições (e campanhas de marketing) - Um artigo sobre awareness orgânico e distribuição estratégica');
-      window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
-    }
-  </script>
+  <!-- Introduction -->
+  <section class="article-section">
+    <p>Awareness é uma métrica comum e decisiva nos relatórios de campanhas de comunicação. Em essência, ela indica a extensão da mensagem, ou seja: a campanha chegou ao público certo? Em que escala?</p>
+    <p>Tradicionalmente, usamos indicadores quantitativos como número de matérias, impressões, alcance e volume de menções. Eles são úteis, mas deixam perguntas estratégicas no ar:</p>
+    <ul>
+      <li>As pessoas lembraram da mensagem?</li>
+      <li>Ela gerou engajamento emocional?</li>
+      <li>Mudou percepções?</li>
+      <li>Influenciou comportamento?</li>
+    </ul>
+    <p>A ausência desses dados qualitativos pode fazer o awareness parecer frágil. Mas, quando analisado com inteligência e operado com estratégia, ele se torna uma arma poderosa da comunicação moderna.</p>
+  </section>
 
-  <!-- Language Display Rules -->
-  <style>
-    .lang-en { display: none; }
-    .en .lang-pt { display: none; }
-    .en .lang-en { display: revert; }
-  </style>
+  <!-- Money -->
+  <section class="article-section">
+    <h2>Dinheiro</h2>
+    <p>O ponto central não é só medir awareness, mas entender o valor dele. Quanto você paga para gerar cada unidade de atenção.</p>
+    <p>Na mídia paga, essa conta é explícita: usamos o famoso CPM (Custo por Mil Impressões). Se o conteúdo é bom, relevante e culturalmente alinhado ao público, as plataformas têm menos dificuldade para distribuí-lo e o CPM diminui.</p>
+    <p>Se o conteúdo é fraco, ainda assim é possível "forçar" awareness: basta investir mais verba.</p>
+    <p>Mas na mídia orgânica, não existe esse atalho.</p>
+  </section>
+
+  <!-- Organic -->
+  <section class="article-section">
+    <h2>Orgânico</h2>
+    <p>No orgânico (imprensa, influenciadores ou perfis proprietários) a moeda não é dinheiro: é valor cultural para o público.</p>
+    <p>Para conquistar awareness orgânico, você precisa conhecer profundamente seu público: seus medos, desejos, linguagem, repertório, contexto, códigos culturais e expectativas.</p>
+    <p>Não é possível comprar relevância: você precisa merecê-la.</p>
+    <p>Aqui, awareness se torna muito mais do que alcance. Ele se transforma em um indicador de conexão real: Se você gerou awareness orgânico, você entrou na vida das pessoas como convidado.</p>
+    <p>E quando isso acontece, elas tendem a:</p>
+    <ul>
+      <li>Acreditar no que você diz</li>
+      <li>Comprar de você</li>
+      <li>Defender sua marca</li>
+      <li>Votar em você</li>
+    </ul>
+    <p>Esse é o poder do awareness quando ele nasce do valor e não da verba.</p>
+  </section>
+
+  <!-- Power -->
+  <section class="article-section">
+    <h2>Poder</h2>
+    <p>Awareness é, acima de tudo, distribuição. E quem controla a distribuição tem vantagem estratégica.</p>
+    <p>Quando existe uma estratégia sólida que entende o público, ativa os meios corretos e conversa com a cultura, o conteúdo se torna familiar, gera interesse espontâneo e se espalha sem esforço adicional.</p>
+    <p>Um caso emblemático disso foi a eleição americana de 2016.</p>
+  </section>
+
+  <!-- The Trump Case -->
+  <section class="article-section">
+    <h2>O Case Trump como Fenômeno de Mídia</h2>
+    <p><em>(Não como posicionamento político)</em></p>
+    <p>Durante as primárias, Donald Trump gastou menos de US$ 20 milhões em propaganda paga, enquanto seus adversários ultrapassaram US$ 140 milhões. Mesmo assim, Trump dominou a atenção pública.</p>
+    <p><strong>Por quê?</strong></p>
+    <p>Porque suas declarações controversas renderam uma avalanche de mídia espontânea: estimativas mostram que ele recebeu mais de US$ 400 milhões em "earned media" em um único mês, mais do que o dobro do segundo colocado.</p>
+    <p>É importante distinguir as coisas:</p>
+    <ul>
+      <li>O comportamento da campanha foi antiético, reprovável e incluiu práticas indevidas (como o uso de dados de milhões de usuários do Facebook sem consentimento).</li>
+      <li>Mas o mecanismo de comunicação é tecnicamente didático.</li>
+    </ul>
+    <p>A campanha demonstrou, de forma extrema, como awareness orgânico massivo pode sobrepor investimento financeiro. Isso não valida a conduta. Mas evidencia o poder bruto da atenção.</p>
+  </section>
+
+  <!-- Analytics -->
+  <section class="article-section">
+    <h2>Analytics</h2>
+    <p>Times de comunicação apoiados por analytics entendem nuances, identificam os gatilhos que geram distribuição orgânica e navegam a campanha com muito mais precisão. Eles transformam dados em vantagem competitiva — seja no mercado, seja em contextos políticos. Conte comigo!</p>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CTA -->
+  <section style="text-align: center; padding: 3rem 0;">
+    <h2 class="display" style="margin-bottom: 1rem;">Pronto para entender seu poder de distribuição?</h2>
+    <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 580px; margin-left: auto; margin-right: auto;">
+      Entre em contato para discutir como podemos aplicar essas metodologias ao seu negócio ou campanha.
+    </p>
+    <a href="index.html#newsletter" style="display: inline-block;">
+      <button class="btn-primary">Vamos conversar sobre estratégia</button>
+    </a>
+  </section>
+
+</div>
+
+<hr class="divider" />
+
+<!-- FOOTER CAPTURE -->
+<div class="footer-capture" id="newsletter">
+  <h2>
+    Insights sobre comportamento, cultura e dados que ajudam marcas, política e causas a ganhar força.
+  </h2>
+  <p>143 analistas e diretores já assinaram.</p>
+  <div class="footer-form">
+    <input type="email" placeholder="seu@email.com" />
+    <button class="btn-primary">Quero receber</button>
+  </div>
+  <p class="footer-meta-center">Sem frequência forçada · Zero spam · Cancele quando quiser</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Narrativa<span>.</span>Social</div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/henriquepaludetto/" target="_blank">LinkedIn</a>
+    <a href="https://tagarelo.com.br" target="_blank">tagarelo.com.br</a>
+    <a href="privacidade.html">Política de privacidade</a>
+  </div>
+  <span class="footer-copy">© 2026</span>
+</footer>
+
 </body>
 </html>

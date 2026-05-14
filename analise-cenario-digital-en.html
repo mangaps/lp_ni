@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Case: Digital Scenario Analysis | Narrativa Social</title>
+<meta name="description" content="How we transform data into winning strategies through research, network monitoring, and political context analysis." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  .article-hero {
+    min-height: 50vh;
+    /* background: linear-gradient(135deg, rgba(200,137,42,0.06) 0%, transparent 70%); */
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 1rem 2.5rem 1rem;
+    max-width: 860px; margin: 0 auto;
+    position: relative;
+  }
+  .article-hero::before {
+    content: '';
+    position: absolute; top: -40px; right: -200px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(200,137,42,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .article-hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.75rem;
+    max-width: 680px;
+  }
+  .article-hero h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .article-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin-bottom: 0;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .article-content {
+    max-width: 860px; margin: 0 auto;
+    /* padding: 0 2.5rem; */
+  }
+  
+  section {
+    padding: 1rem 2.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  
+  .audience-toggle {
+    display: flex; gap: 1rem;
+    margin: 2rem 0 3rem 0;
+  }
+  .toggle-btn {
+    background: transparent;
+    border: 1px solid var(--border-med);
+    color: var(--text-muted);
+    padding: 0.6rem 1.25rem;
+    border-radius: 4px;
+    font-family: var(--sans);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .toggle-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .toggle-btn:hover {
+    border-color: var(--accent);
+    color: var(--text);
+  }
+
+  .article-section {
+    margin-bottom: 0.75rem;
+  }
+  .article-section h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .article-section h3 {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .article-section h4 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  .article-section p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    max-width: 740px;
+  }
+  .article-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0.75rem;
+  }
+  .article-section ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  .article-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .benefit-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .benefit-box h4 {
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .benefit-box p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 680px) {
+    .article-hero {
+      padding: 3rem 2.5rem 2rem;
+      min-height: auto;
+    }
+    .article-hero h1 {
+      font-size: 1.8rem;
+    }
+    .audience-toggle {
+      flex-direction: column;
+    }
+  }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2D0FBN1YD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H2D0FBN1YD');
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index-en.html" style="text-decoration: none; color: inherit;" class="nav-logo">Narrativa<span>.</span>Social</a>
+  <div class="nav-links">
+    <a href="index-en.html#sobre">What we do</a>
+    <a href="index-en.html#blog">Articles</a>
+    <a href="https://tagarelo.com.br" target="_blank">Tagarelo</a>
+    <a href="index-en.html#newsletter">
+      <button class="btn-nav">Get newsletter</button>
+    </a>
+    <a href="analise-cenario-digital.html" style="margin-left: 1rem; padding-left: 1rem; border-left: 1px solid var(--border); color: var(--text-muted);">PT</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <p class="hero-eyebrow">Case</p>
+  <h1>Digital Scenario Analysis</h1>
+  <p class="article-subtitle">From visibility to reputation: how to turn the tide of rejection with analytics for communications</p>
+</div>
+
+<!-- ARTICLE CONTENT -->
+<div class="article-content">
+
+  <!-- Introduction -->
+  <section class="article-section">
+    <p><strong>This case synthesizes the digital scenario analysis conducted for a public figure, based on mentions collected between July and October 2025.</strong></p>
+  </section>
+
+  <!-- 1. The Challenge -->
+  <section class="article-section">
+    <h2>1. The Challenge</h2>
+    <ul>
+      <li>High rejection identified in research.</li>
+      <li>Limited budget for qualitative research.</li>
+      <li>Need to understand narratives, compare with competitors, and identify immediate actions.</li>
+    </ul>
+  </section>
+
+  <!-- 2. Our Approach -->
+  <section class="article-section">
+    <h2>2. Our Approach</h2>
+    <ul>
+      <li>Digital scenario analysis across multiple networks.</li>
+      <li>Proprietary methodology for analytics and qualitative reading.</li>
+      <li>Narrative SWOT and perception diagnosis.</li>
+      <li>Action plan with tactical priorities.</li>
+    </ul>
+  </section>
+
+  <!-- 3. Key Findings -->
+  <section class="article-section">
+    <h2>3. Key Findings</h2>
+    <ul>
+      <li>Visibility is an asset, but reactive.</li>
+      <li>Symbolic episodes maintain rejection.</li>
+      <li>Technical themes (ESG, agribusiness, and economics) sustain authority.</li>
+      <li>Coordinated reactions amplify negativity.</li>
+      <li>Thematic diversity is a differentiator, if well-channeled.</li>
+    </ul>
+  </section>
+
+  <!-- 4. Strategic Moves -->
+  <section class="article-section">
+    <h2>4. Strategic Moves</h2>
+    <ul>
+      <li>Reposition the narrative — results, dialogue, and stability.</li>
+      <li>Activate networks and influencers — technical and regional allies.</li>
+      <li>Strengthen public credibility — more media, less reactivity.</li>
+    </ul>
+  </section>
+
+  <!-- 5. Impact -->
+  <section class="article-section">
+    <h2>5. Impact</h2>
+    <ul>
+      <li>Clarity on the causes of rejection.</li>
+      <li>Concrete path to reposition image.</li>
+      <li>Ready narrative foundation to integrate into strategy.</li>
+      <li>Protocols to handle waves of reactivity.</li>
+    </ul>
+  </section>
+
+  <!-- The Hidden Code -->
+  <section class="article-section">
+    <h2>The Hidden Code of Digital Reputation</h2>
+    <p><em>An analysis that helps PR teams understand coordinated attacks, map influencers, and shield reputations.</em></p>
+    <p>The qualitative reading revealed that the analyzed leadership is impacted by three central vectors of negativity: ideological polarization, reactivation of symbolic episodes from the past, and reactions to their own posts on sensitive topics.</p>
+    <p>The monitoring shows that old episodes continue to be mobilized as trust markers, functioning as narrative anchors that shape public perception. At the same time, proactive actions maintain high visibility, but frequently traversed by cycles of reactivity.</p>
+    <p>What these data reveal goes beyond what any subjective perception can reach. By identifying hidden patterns — who sets the agenda, who amplifies, and how narratives gain strength — we access a layer of reputation that doesn't appear in traditional monitoring.</p>
+    <p><strong>That's the competitive advantage: it's not just information. It's intelligence.</strong></p>
+  </section>
+
+  <!-- Real Challenges -->
+  <section class="article-section">
+    <h2>Real Challenges</h2>
+    <p><em>When "feeling" isn't enough: real stories that become risk without data intelligence</em></p>
+    
+    <!-- Audience Toggle -->
+    <div class="audience-toggle">
+      <button class="toggle-btn active" onclick="toggleAudience('agency')">For Agencies</button>
+      <button class="toggle-btn" onclick="toggleAudience('company')">For Companies</button>
+    </div>
+    
+    <div class="audience-content" data-audience="agency">
+      <p>These situations happen every day in PR, communications, and reputation management teams. Without data-driven intelligence, you operate with fragments and each decision becomes a risk.</p>
+      
+      <div class="benefit-box">
+        <h4>1. The negative narrative grows — and nobody knows who's behind it</h4>
+        <p>Monitoring shows volume, but doesn't explain who's driving the attack. With data: patterns of coordination, key influencers, origin. Without it: react with less precision.</p>
+      </div>
+
+      <div class="benefit-box">
+        <h4>2. "Everything is urgent" and the client wants prioritization</h4>
+        <p>The client asks: "What should we say now?". With data: clarity on themes that move perception. Without it: you become a tactical executor, not a strategic consultant.</p>
+      </div>
+
+      <div class="benefit-box">
+        <h4>3. Rejection increases and the client demands immediate answers</h4>
+        <p>With data: hidden vectors of rejection, symbolic episodes, and themes that drive negativity. Without it: you're left without a narrative to present to the client.</p>
+      </div>
+    </div>
+
+    <div class="audience-content" data-audience="company" style="display: none;">
+      <p>These scenarios happen with speed in regulated and high-exposure companies. Without data, you react under pressure with little visibility of the risk.</p>
+      
+      <div class="benefit-box">
+        <h4>1. A regulatory decision generates noise and you don't know which audience to attack first</h4>
+        <p>Multiple groups react at the same time. Without data: everything seems urgent. With data: you know which audiences really move reputational risk.</p>
+      </div>
+
+      <div class="benefit-box">
+        <h4>2. An influencer creates negative narrative and nobody understands why it went viral</h4>
+        <p>Without data: depend on subjective perceptions. With data: present evidence about cause, reach, and reputational impact.</p>
+      </div>
+
+      <div class="benefit-box">
+        <h4>3. The company invests in reputation, but doesn't know what works</h4>
+        <p>Without data: dispersion of efforts. With data: clarity on which themes and actions really move reputation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership -->
+  <section class="article-section">
+    <h2>Partnership</h2>
+    
+    <div class="audience-content" data-audience="agency">
+      <h3>How this partnership strengthens your agency</h3>
+      <p>Your clients already demand intelligence that goes beyond monitoring and content. When they ask for deep narrative or risk analysis, your team doesn't always have the capacity, time, or expertise.</p>
+      <p>This is where we come in as a technical partner: we deliver advanced scenario analysis, sensitive segmentations, narrative frameworks — while you maintain the relationship, strategy, and perceived value to the client.</p>
+      <p><strong>Cases where this intelligence makes a difference:</strong></p>
+      <ul>
+        <li>Sensitive campaigns</li>
+        <li>Brand or leadership protection in crisis</li>
+        <li>Narrative analysis pre-launch</li>
+        <li>Accounts with complex audiences or high reputational risk</li>
+      </ul>
+    </div>
+
+    <div class="audience-content" data-audience="company" style="display: none;">
+      <h3>How this intelligence protects your reputation</h3>
+      <p>Negative narratives emerge quickly. With this intelligence, you:</p>
+      <ul>
+        <li>Identify real causes of crises before they become emergencies</li>
+        <li>Map key audiences and prioritize communication with precision</li>
+        <li>Build defensive narratives based on evidence</li>
+        <li>Track the impact of actions with clear metrics</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CTA -->
+  <section style="text-align: center; padding: 3rem 0;">
+    <h2 class="display" style="margin-bottom: 1rem;">Ready to turn data into strategy?</h2>
+    <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 580px; margin-left: auto; margin-right: auto;">
+      Get in touch to understand how this intelligence can protect or boost your reputation.
+    </p>
+    <a href="index-en.html#newsletter" style="display: inline-block;">
+      <button class="btn-primary">Get a similar case</button>
+    </a>
+  </section>
+
+</div>
+
+<hr class="divider" />
+
+<!-- FOOTER CAPTURE -->
+<div class="footer-capture" id="newsletter">
+  <h2>
+    Insights on behavior, culture, and data that help brands, politics, and causes gain momentum.
+  </h2>
+  <p>143 analysts and directors have already subscribed.</p>
+  <div class="footer-form">
+    <input type="email" placeholder="your@email.com" />
+    <button class="btn-primary">I want to receive</button>
+  </div>
+  <p class="footer-meta-center">No forced frequency · Zero spam · Cancel anytime</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Narrativa<span>.</span>Social</div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/henriquepaludetto/" target="_blank">LinkedIn</a>
+    <a href="https://tagarelo.com.br" target="_blank">tagarelo.com.br</a>
+    <a href="privacidade.html">Privacy Policy</a>
+  </div>
+  <span class="footer-copy">© 2026</span>
+</footer>
+
+<script>
+  function toggleAudience(audience) {
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+    
+    document.querySelectorAll('.audience-content').forEach(content => {
+      if (content.getAttribute('data-audience') === audience) {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
