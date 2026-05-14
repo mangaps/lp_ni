@@ -290,14 +290,14 @@
     transition: transform 0.3s;
   }
   .icp-card:hover::after { transform: scaleX(1); }
-  .icp-card:last-child::after { background: var(--teal); }
+  .icp-card:first-child::after { background: var(--teal); }
   .icp-tag {
     font-size: 0.72rem; font-weight: 500;
     letter-spacing: 0.1em; text-transform: uppercase;
     color: var(--accent);
     margin-bottom: 1rem;
   }
-  .icp-card:last-child .icp-tag { color: var(--teal-light); }
+  .icp-card:first-child .icp-tag { color: var(--teal-light); }
   .icp-card h3 {
     font-family: var(--serif);
     font-size: 1.15rem; font-weight: 500;
@@ -315,7 +315,7 @@
     color: var(--accent);
     display: flex; align-items: center; gap: 0.4rem;
   }
-  .icp-card:last-child .icp-cta { color: var(--teal-light); }
+  .icp-card:first-child .icp-cta { color: var(--teal-light); }
   .icp-cta::after { content: '→'; }
 
   /* ── LOGOS / PROOF ─────────────────────────────────── */
