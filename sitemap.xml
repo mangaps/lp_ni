@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home PT -->
+  <url>
+    <loc>https://narrativasocial.com/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/" />
+  </url>
+
+  <!-- Home EN -->
+  <url>
+    <loc>https://narrativasocial.com/index-en.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/" />
+  </url>
+
+  <!-- Article: Análise de Cenário Digital PT -->
+  <url>
+    <loc>https://narrativasocial.com/analise-cenario-digital.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/analise-cenario-digital-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/analise-cenario-digital.html" />
+  </url>
+
+  <!-- Article: Análise de Cenário Digital EN -->
+  <url>
+    <loc>https://narrativasocial.com/analise-cenario-digital-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/analise-cenario-digital-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/analise-cenario-digital.html" />
+  </url>
+
+  <!-- Article: Terras Raras, Munição Política PT -->
+  <url>
+    <loc>https://narrativasocial.com/terras-raras-municao-politica.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/terras-raras-municao-politica-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/terras-raras-municao-politica.html" />
+  </url>
+
+  <!-- Article: Terras Raras, Munição Política EN -->
+  <url>
+    <loc>https://narrativasocial.com/terras-raras-municao-politica-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/terras-raras-municao-politica-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/terras-raras-municao-politica.html" />
+  </url>
+
+  <!-- Article: Quando a Distribuição Decide Eleições PT -->
+  <url>
+    <loc>https://narrativasocial.com/quando-distribuicao-decide-eleicoes.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/quando-distribuicao-decide-eleicoes-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/quando-distribuicao-decide-eleicoes.html" />
+  </url>
+
+  <!-- Article: Quando a Distribuição Decide Eleições EN -->
+  <url>
+    <loc>https://narrativasocial.com/quando-distribuicao-decide-eleicoes-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/quando-distribuicao-decide-eleicoes-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/quando-distribuicao-decide-eleicoes.html" />
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://narrativasocial.com/privacidade.html</loc>
+  </url>
+
+</urlset>

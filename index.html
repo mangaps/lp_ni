@@ -3,8 +3,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Narrativa Social — Inteligência para quem decide em comunicação</title>
-<meta name="description" content="Inteligência aplicada à comunicação. Construída de dentro para fora, por quem viveu o problema por dentro." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://narrativasocial.com/" />
+<link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/" />
+<link rel="alternate" hreflang="en" href="https://narrativasocial.com/index-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://narrativasocial.com/" />
+<title>Narrativa Social — Analytics e inteligência aplicados à comunicação</title>
+<meta name="description" content="A Narrativa Social transforma conhecimento de comunicação em serviços de inteligência e produtos de analytics. Dados, método e tecnologia aplicados a análise, mensuração e decisão." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Narrativa Social — Analytics e inteligência aplicados à comunicação" />
+<meta property="og:description" content="A Narrativa Social transforma conhecimento de comunicação em serviços de inteligência e produtos de analytics. Dados, método e tecnologia aplicados a análise, mensuração e decisão." />
+<meta property="og:url" content="https://narrativasocial.com/" />
+<meta property="og:site_name" content="Narrativa Social" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Narrativa Social — Analytics e inteligência aplicados à comunicação" />
+<meta name="twitter:description" content="Transformamos conhecimento de comunicação em serviços de inteligência e produtos de analytics." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -119,9 +132,12 @@
     font-size: 1.05rem;
     color: var(--text-muted);
     max-width: 520px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     line-height: 1.75;
     font-weight: 300;
+  }
+  .hero-sub:last-of-type {
+    margin-bottom: 3rem;
   }
 
   /* ── EMAIL CAPTURE ─────────────────────────────────── */
@@ -181,6 +197,17 @@
     margin-right: 1.25rem;
   }
   .capture-meta span:first-child::before { content: ''; margin: 0; }
+
+  .tagline-quote {
+    background: var(--bg-card);
+    border-left: 4px solid var(--accent);
+    padding: 2rem;
+    margin: 2rem 0;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--text);
+    line-height: 1.8;
+  }
 
   /* ── DIVIDER ───────────────────────────────────────── */
   .divider {
@@ -568,14 +595,134 @@
   }
   .btn-teal:hover { background: rgba(27,144,104,0.1); }
 
+  /* ── HERO BUTTONS ──────────────────────────────────── */
+  .hero-buttons {
+    display: flex; gap: 1rem;
+    margin-bottom: 3rem;
+    max-width: 520px;
+    flex-wrap: wrap;
+  }
+  .btn-hero {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 4px;
+    font-family: var(--sans);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+  .btn-hero:hover { background: var(--accent-light); }
+  .btn-hero-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border-med);
+    padding: 0.8rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 4px;
+    font-family: var(--sans);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-hero-secondary:hover { border-color: var(--accent); background: rgba(200,137,42,0.06); }
+
+  /* ── SERVICES-PRODUCTS GRID ────────────────────────── */
+  .services-products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .services-products-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  .services-products-card h3 {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+  .services-products-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── INTELLIGENCE SERVICES GRID ────────────────────── */
+  .intelligence-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .intelligence-service-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  .intelligence-service-card h3 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+  .intelligence-service-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── CONTEXTS GRID ──────────────────────────────────── */
+  .contexts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .context-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  .context-card h3 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+  .context-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
   /* ── RESPONSIVE ────────────────────────────────────── */
   @media (max-width: 680px) {
     nav { padding: 1rem 1.25rem; }
     .nav-links { display: none; }
     .hero { padding: 4rem 1.25rem 3rem; }
+    .hero-buttons { flex-direction: column; }
+    .btn-hero, .btn-hero-secondary { width: 100%; }
     section { padding: 3.5rem 1.25rem; }
     .capture-form { flex-direction: column; }
     .services-grid { grid-template-columns: 1fr; }
+    .services-products-grid { grid-template-columns: 1fr; }
+    .intelligence-services-grid { grid-template-columns: 1fr; }
+    .contexts-grid { grid-template-columns: 1fr; }
     .icp-grid { grid-template-columns: 1fr; }
     .blog-grid { grid-template-columns: 1fr; }
     .about-founder { grid-template-columns: 1fr; }
@@ -596,12 +743,10 @@
 <nav>
   <div class="nav-logo">Narrativa<span>.</span>Social</div>
   <div class="nav-links">
-    <a href="#sobre">O que fazemos</a>
+    <a href="#servicos">Serviços</a>
     <a href="#blog">Artigos</a>
-    <a href="https://www.tagarelo.com.br" target="_blank" rel="noopener noreferrer">Tagarelo</a>
-    <a href="#newsletter">
-      <button class="btn-nav">Receber newsletter</button>
-    </a>
+    <a href="https://www.tagarelo.com.br" target="_blank" rel="noopener noreferrer">tagarelo</a>
+    <a href="#newsletter" class="btn-nav">Newsletter</a>
     <a href="index-en.html" style="margin-left: 1rem; padding-left: 1rem; border-left: 1px solid var(--border); color: var(--text-muted);">EN</a>
   </div>
 </nav>
@@ -610,137 +755,64 @@
 <div class="hero" id="inicio">
   <p class="hero-eyebrow">Narrativa Social</p>
   <h1>
-    O que está sendo dito<br />
-    não é <em>ruído.</em><br />
-    É sinal.
+    Analytics e inteligência<br />
+    aplicados à <em>comunicação.</em>
   </h1>
   <p class="hero-sub">
-    Inteligência para quem decide em comunicação — construída por quem viveu o problema por dentro.
+    A Narrativa Social transforma conhecimento de comunicação em serviços de inteligência e produtos de analytics.
+  </p>
+  <p class="hero-sub">
+    Dados, método e tecnologia aplicados a problemas de análise, mensuração e decisão.
   </p>
 
-  <div class="capture-block">
-    <p>
-      <strong>Newsletter Narrativa Social</strong><br />
-      Insights sobre comportamento, cultura e dados que ajudam marcas, política e causas a ganhar força.
-    </p>
-    <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js"
-      data-beehiiv-form="163a310a-7219-4563-89ec-653b812c78a3"></script>
-    <div class="capture-meta">
-      <span>Sem frequência forçada</span>
-      <span>Zero spam</span>
-      <span>Cancele quando quiser</span>
-    </div>
+  <div class="hero-buttons">
+    <a href="https://www.tagarelo.com.br" target="_blank" rel="noopener noreferrer" class="btn-hero">Conheça o tagarelo</a>
+    <a href="#servicos" class="btn-hero-secondary">Veja o que fazemos</a>
   </div>
 </div>
 
 <hr class="divider" />
 
-<!-- WHAT WE DO -->
-<section id="sobre">
-  <p class="section-label">O que fazemos</p>
-  <h2 class="display">
-    Inteligência aplicada<br />
-    à comunicação.<br />
-    <em>De dentro para fora.</em>
-  </h2>
+<!-- ORIGEM -->
+<section id="origem">
+  <p class="section-label">De dentro</p>
+  <h2 class="display">De dentro do trabalho de comunicação</h2>
   <p class="about-text">
-    A Narrativa Social foi fundada por quem <strong>viveu o problema por dentro</strong> — mais de 10 anos analisando dados, construindo inteligência e entregando decisão para marcas globais. As ferramentas existentes foram feitas por quem olhou para comunicação de fora. A Narrativa Social, não.
+    A Narrativa Social nasceu da experiência com mensuração, social listening, classificação de dados, análise de cenários e inteligência para comunicação.
   </p>
-
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">◎</div>
-      <h3>Análise de Cenário</h3>
-      <p>Mapeamos narrativas, atores e tendências em torno de temas estratégicos. Identificamos oportunidades, riscos e caminhos de ação antes que virem manchete.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">↗</div>
-      <h3>Mapeamento de Tendências</h3>
-      <p>Metodologia proprietária que mensura volume, velocidade e volatilidade para identificar movimentos emergentes antes que o mercado perceba.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">⚡</div>
-      <h3>Ambiente Digital + Pesquisa</h3>
-      <p>A união da análise de cenário digital com técnicas de pesquisa comportamental. Cobertura 360° em momentos de recursos ou tempo limitados.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">◈</div>
-      <h3>Analytics para Agências</h3>
-      <p>Terceirização do setor de analytics para agências de comunicação e RP. Parceiro técnico e estratégico operando sob a marca da sua agência.</p>
-    </div>
-  </div>
-
-  <div id="tagarelo"></div>
-  <div class="tagarelo-banner">
-    <div class="tagarelo-banner-text">
-      <p class="banner-eyebrow">Produto · Tagarelo</p>
-      <h3>O primeiro produto da Narrativa Social já está no ar.</h3>
-      <p>O Tagarelo transforma parte do nosso método em software: classificação de texto em escala, com critérios definidos, revisão humana e leitura estruturada dos resultados.</p>
-    </div>
-    <div class="banner-cta-block">
-      <a href="https://www.tagarelo.com.br" target="_blank" rel="noopener noreferrer" aria-label="Acessar o site do Tagarelo">
-        <img src="assets/logos/tagarelo-logo-completo-negativo-mono-cream-transparente-3x.png" alt="Tagarelo" style="max-width: 240px; height: auto; display: block;" />
-      </a>
-      <p class="banner-cta-sub">Conheça o Tagarelo</p>
-    </div>
-  </div>
+  <p class="about-text">
+    Foi nesse trabalho que surgiram os problemas que hoje orientam nossos serviços e produtos: critérios difíceis de manter em escala, processos pouco sistematizados e grandes volumes de informação que exigem trabalho operacional.
+  </p>
+  <p class="about-text">
+    Alguns desses problemas pedem análise. Outros podem virar ferramenta.
+  </p>
 </section>
 
 <hr class="divider" />
 
-<!-- FOR WHOM -->
-<section id="para-quem">
-  <p class="section-label">Para quem</p>
-  <h2 class="display">
-    Dois públicos.<br />
-    Um mesmo <em>rigor.</em>
-  </h2>
-
-  <div class="icp-grid">
-    <div class="icp-card">
-      <p class="icp-tag">Analistas e times</p>
-      <h3>Você classifica, monitora e entrega relatório toda semana. Mas o dado que alimenta tudo isso nunca é revisado com o rigor que merece.</h3>
-      <p>O tagarelo resolve isso: classificação de texto em escala, com os seus critérios, em minutos. Do operacional ao estratégico.</p>
-      <a href="#tagarelo" class="icp-cta">Lista de early adopters</a>
-    </div>
-    <div class="icp-card">
-      <p class="icp-tag">C-level e diretores</p>
-      <h3>Quando um tema vira munição política, as empresas param de controlar a narrativa — e começam a reagir a ela.</h3>
-      <p>Inteligência para decisão em contextos de risco reputacional. Percepção construída vs. realidade provável.</p>
-      <a href="#newsletter" class="icp-cta">Acompanhar a Narrativa Social</a>
-    </div>
-  </div>
-</section>
-
-<!-- LOGOS -->
-<div class="proof-section">
-  <p class="proof-label">Projetos desenvolvidos em</p>
-  <div class="logos-row">
-    <span class="logo-item">Ambev</span>
-    <span class="logo-item">Itaú</span>
-    <span class="logo-item">Kenvue</span>
-    <span class="logo-item">Heineken</span>
-    <span class="logo-item">Warner Bros.</span>
-    <span class="logo-item">Saint-Gobain</span>
-    <span class="logo-item">Bristol Myers Squibb</span>
-    <span class="logo-item">Dyson</span>
-  </div>
-</div>
-
-<hr class="divider" />
-
-<!-- ABOUT HENRIQUE -->
+<!-- HENRIQUE -->
 <section id="henrique">
-  <p class="section-label">Quem</p>
+  <p class="section-label">Quem lidera</p>
+  <h2 class="display">Mais de 10 anos entre comunicação, analytics e inteligência</h2>
+  
   <div class="about-founder">
     <div class="founder-avatar">
-      <img src="assets/Henrique_Paludetto.jpg" alt="Henrique Paludetto" />
+      <img src="assets/Henrique_Paludetto.jpg" alt="Henrique Paludetto, fundador da Narrativa Social" />
     </div>
     <div>
       <p class="founder-name">Henrique Paludetto</p>
       <p class="founder-title">Fundador, Narrativa Social</p>
       <p class="founder-bio">
-        Mais de 10 anos em pesquisa e inteligência aplicada à comunicação. Analytics & Intelligence Manager na Weber Shandwick Collective. Selecionado para programa em Washington DC com foco em data/analytics e produto. Constrói o que o mercado precisava — e que ninguém havia construído de dentro para fora.
+        Henrique Paludetto é jornalista, tem MBA em Marketing e capacitação em Data Science. Trabalhou por mais de 10 anos com pesquisa, analytics e inteligência aplicada à comunicação e foi Analytics & Intelligence Manager na Weber Shandwick.
+      </p>
+      <p class="founder-bio">
+        Sua experiência inclui projetos para marcas como Ambev, Itaú, Johnson & Johnson / Kenvue, Heineken, Warner Bros. Discovery, BRF, Saint-Gobain, 99, Bristol Myers Squibb e Dyson.
+      </p>
+      <p class="founder-bio">
+        Na Narrativa Social, trabalha na aplicação de tecnologia e inteligência artificial a problemas de comunicação e analytics e lidera o desenvolvimento do tagarelo.
+      </p>
+      <p style="margin-top: 1.5rem;">
+        <a href="https://www.linkedin.com/in/henriquepaludetto/" target="_blank" style="color: var(--accent); font-weight: 500; text-decoration: underline;">Henrique no LinkedIn →</a>
       </p>
     </div>
   </div>
@@ -748,13 +820,120 @@
 
 <hr class="divider" />
 
-<!-- BLOG -->
+<!-- SERVIÇOS E PRODUTOS -->
+<section id="sp">
+  <p class="section-label">Frentes</p>
+  <h2 class="display">O conhecimento pode virar análise ou ferramenta</h2>
+  <p class="about-text">A Narrativa Social trabalha em duas frentes.</p>
+
+  <div class="services-products-grid">
+    <div class="services-products-card">
+      <h3>Serviços de inteligência</h3>
+      <p>Projetos desenvolvidos para questões específicas de comunicação, reputação, analytics e decisão.</p>
+    </div>
+    <div class="services-products-card">
+      <h3>Produtos de analytics</h3>
+      <p>Ferramentas para processos recorrentes que podem ganhar escala com tecnologia.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- TAGARELO PRINCIPAL -->
+<section id="tagarelo-principal">
+  <p class="section-label">Produto</p>
+  <h2 class="display">Classificação de texto em escala, com seus critérios.</h2>
+  <p class="about-text">
+    O tagarelo é o primeiro produto da Narrativa Social.
+  </p>
+  <p class="about-text">
+    Você carrega uma base, define o que precisa classificar e estabelece seus critérios. O tagarelo aplica essa lógica ao conjunto e organiza os resultados para revisão e análise.
+  </p>
+  <div class="tagline-quote">
+    A IA aplica critérios em escala. Você define, revisa e interpreta.
+  </div>
+  <div style="margin-top: 2rem;">
+    <a href="https://www.tagarelo.com.br" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-block;">Conheça o tagarelo →</a>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- SERVIÇOS DE INTELIGÊNCIA -->
+<section id="servicos">
+  <p class="section-label">Inteligência</p>
+  <h2 class="display">Inteligência aplicada à comunicação e à decisão</h2>
+
+  <div class="intelligence-services-grid">
+    <div class="intelligence-service-card">
+      <h3>Análise de cenários e narrativas</h3>
+      <p>Leitura de mídia, redes sociais, autoridades e stakeholders para entender como temas ganham atenção, quais atores participam da conversa e que movimentos podem afetar decisões.</p>
+    </div>
+    <div class="intelligence-service-card">
+      <h3>Analytics e mensuração</h3>
+      <p>Estruturação de dados, métodos, classificações e dashboards para tornar a mensuração de comunicação mais consistente e útil para análise.</p>
+    </div>
+    <div class="intelligence-service-card">
+      <h3>Social listening, pesquisa e tendências</h3>
+      <p>Análise de conversas, comportamento e sinais culturais para identificar padrões, mudanças e temas que merecem investigação.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ONDE APLICAMOS -->
+<section id="contextos">
+  <p class="section-label">Contextos</p>
+  <h2 class="display">Diferentes contextos. Perguntas diferentes.</h2>
+
+  <div class="contexts-grid">
+    <div class="context-card">
+      <h3>Comunicação, RP e marcas</h3>
+      <p>Como medir melhor, interpretar mudanças de percepção e entender narrativas que afetam marcas e reputações?</p>
+    </div>
+    <div class="context-card">
+      <h3>Empresas e setores regulados</h3>
+      <p>Que sinais surgem de autoridades, reguladores, imprensa e stakeholders e podem afetar decisões?</p>
+    </div>
+    <div class="context-card">
+      <h3>Política e causas</h3>
+      <p>Quem ganha atenção, quais narrativas estão crescendo e como diferentes atores influenciam a percepção sobre uma liderança, pauta ou causa?</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- MÉTODO APLICADO -->
+<section id="metodo">
+  <p class="section-label">Aplicações</p>
+  <h2 class="display">Alguns dos problemas em que esse trabalho já foi aplicado</h2>
+
+  <div class="contexts-grid">
+    <div class="context-card">
+      <h3>Política e contexto eleitoral</h3>
+      <p>Análise de cenário, narrativas e movimentos emergentes para lideranças e contextos eleitorais.</p>
+    </div>
+    <div class="context-card">
+      <h3>Cultura e consumo</h3>
+      <p>Análise de percepção pública e comportamento cultural.</p>
+    </div>
+    <div class="context-card">
+      <h3>Inteligência institucional</h3>
+      <p>Acompanhamento de ambiente público, regulatório e de stakeholders.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- BLOG + NEWSLETTER -->
 <section id="blog">
-  <p class="section-label">Artigos e cases</p>
+  <p class="section-label">Conteúdo</p>
   <h2 class="display">
-    Explorações práticas sobre<br />
-    como narrativas <em>moldam</em><br />
-    percepções e afetam negócios.
+    Insights sobre comportamento, cultura e dados que ajudam marcas, política e causas a ganhar força.
   </h2>
 
   <div class="blog-grid">
@@ -786,22 +965,19 @@
       </div>
     </a>
   </div>
-</section>
 
-<hr class="divider" />
-
-<!-- FOOTER CAPTURE -->
-<div class="footer-capture" id="newsletter">
-  <h2>
-    Insights sobre comportamento, cultura e dados que ajudam marcas, política e causas a ganhar força.
-  </h2>
-  <p>143 analistas e diretores já assinaram.</p>
-  <div class="footer-form">
-    <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js"
-      data-beehiiv-form="163a310a-7219-4563-89ec-653b812c78a3"></script>
+  <div class="footer-capture" id="newsletter" style="border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 3rem;">
+    <h2>
+      Receba os próximos artigos por e-mail.
+    </h2>
+    <p>Insights sobre comportamento, cultura e dados.</p>
+    <div class="footer-form">
+      <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js"
+        data-beehiiv-form="163a310a-7219-4563-89ec-653b812c78a3"></script>
+    </div>
+    <p class="footer-meta-center">Sem frequência forçada · Zero spam · Cancele quando quiser</p>
   </div>
-  <p class="footer-meta-center">Sem frequência forçada · Zero spam · Cancele quando quiser</p>
-</div>
+</section>
 
 <!-- FOOTER -->
 <footer>
@@ -813,6 +989,58 @@
   </div>
   <span class="footer-copy">© 2026</span>
 </footer>
+
+<!-- JSON-LD STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://narrativasocial.com/#organization",
+      "name": "Narrativa Social",
+      "url": "https://narrativasocial.com/",
+      "description": "Transformamos conhecimento de comunicação em serviços de inteligência e produtos de analytics.",
+      "founder": {
+        "@id": "https://narrativasocial.com/#henrique-paludetto"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://narrativasocial.com/#henrique-paludetto",
+      "name": "Henrique Paludetto",
+      "image": "https://narrativasocial.com/assets/Henrique_Paludetto.jpg",
+      "jobTitle": "Fundador, Narrativa Social",
+      "worksFor": {
+        "@id": "https://narrativasocial.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/henriquepaludetto/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://narrativasocial.com/#website",
+      "name": "Narrativa Social",
+      "url": "https://narrativasocial.com/",
+      "publisher": {
+        "@id": "https://narrativasocial.com/#organization"
+      },
+      "inLanguage": ["pt-BR", "en"]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://tagarelo.com.br/#webapplication",
+      "name": "tagarelo",
+      "url": "https://tagarelo.com.br/",
+      "description": "Classificação de texto em escala, com critérios definidos pelo usuário e revisão humana.",
+      "creator": {
+        "@id": "https://narrativasocial.com/#organization"
+      }
+    }
+  ]
+}
+</script>
 
 </body>
 </html>
