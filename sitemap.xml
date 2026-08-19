@@ -60,9 +60,26 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/quando-distribuicao-decide-eleicoes.html" />
   </url>
 
+  <!-- Article: O que a IA diz sobre a sua marca? PT -->
+  <url>
+    <loc>https://narrativasocial.com/o-que-a-ia-diz-sobre-sua-marca.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/o-que-a-ia-diz-sobre-sua-marca-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/o-que-a-ia-diz-sobre-sua-marca.html" />
+  </url>
+
+  <!-- Article: What does AI say about your brand? EN -->
+  <url>
+    <loc>https://narrativasocial.com/o-que-a-ia-diz-sobre-sua-marca-en.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/o-que-a-ia-diz-sobre-sua-marca-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/o-que-a-ia-diz-sobre-sua-marca.html" />
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://narrativasocial.com/privacidade.html</loc>
   </url>
 
 </urlset>
+google-site-verification: google7ff8b4fe57befa86.html

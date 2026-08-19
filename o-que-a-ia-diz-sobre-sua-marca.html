@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Artigo: O que a IA diz sobre a sua marca? | Narrativa Social</title>
+<meta name="description" content="Como a inteligência artificial está se tornando um meio de comunicação — e o que isso muda para reputação e relações públicas." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  .article-hero {
+    min-height: 50vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 1rem 2.5rem 1rem;
+    max-width: 860px; margin: 0 auto;
+    position: relative;
+  }
+  .article-hero::before {
+    content: '';
+    position: absolute; top: -40px; right: -200px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(200,137,42,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .article-hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.75rem;
+    max-width: 680px;
+  }
+  .article-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin-bottom: 0;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .article-content {
+    max-width: 860px; margin: 0 auto;
+  }
+
+  section {
+    padding: 1rem 2.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .article-section {
+    margin-bottom: 1.75rem;
+  }
+  .article-section h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .article-section p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    max-width: 740px;
+  }
+  .article-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0.75rem;
+  }
+  .article-section ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  .article-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .pull-quote {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text);
+    border-left: 2px solid var(--accent);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    max-width: 580px;
+    line-height: 1.5;
+  }
+
+  .article-img {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 2.5rem 1rem;
+  }
+  .article-img img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .article-img figcaption {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  .sources-section {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .sources-section h2 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  .sources-section ol {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: source-counter;
+    margin-bottom: 1.5rem;
+  }
+  .sources-section ol li {
+    counter-increment: source-counter;
+    padding-left: 1.75rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1.7;
+    max-width: 700px;
+  }
+  .sources-section ol li::before {
+    content: counter(source-counter) '.';
+    position: absolute;
+    left: 0;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+  }
+  .sources-section a {
+    color: var(--accent);
+  }
+  .sources-section a:hover { text-decoration: underline; }
+
+  .editorial-note {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .editorial-note h3 {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.75rem;
+  }
+  .editorial-note p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  @media (max-width: 680px) {
+    .article-hero {
+      padding: 3rem 2.5rem 2rem;
+      min-height: auto;
+    }
+    .article-hero h1 { font-size: 1.8rem; }
+    .article-img img { height: 220px; }
+  }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2D0FBN1YD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H2D0FBN1YD');
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" style="text-decoration: none; color: inherit;" class="nav-logo">Narrativa<span>.</span>Social</a>
+  <div class="nav-links">
+    <a href="index.html#sobre">O que fazemos</a>
+    <a href="index.html#blog">Artigos</a>
+    <a href="https://tagarelo.com.br" target="_blank">Tagarelo</a>
+    <a href="index.html#newsletter">
+      <button class="btn-nav">Receber newsletter</button>
+    </a>
+    <a href="o-que-a-ia-diz-sobre-sua-marca-en.html" style="margin-left: 1rem; padding-left: 1rem; border-left: 1px solid var(--border); color: var(--text-muted);">EN</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <p class="hero-eyebrow">Artigo</p>
+  <h1>O que a IA diz sobre a sua marca?</h1>
+  <p class="article-subtitle">Como a inteligência artificial está se tornando um meio de comunicação — e o que isso muda para reputação e relações públicas.</p>
+</div>
+
+<!-- ARTICLE IMAGE -->
+<figure class="article-img">
+  <img src="assets/zulfugar-karimov-CaRba5ZXJTQ-unsplash.jpg" alt="Tela de smartphone exibindo interface de IA com a pergunta 'What can I help with?'" />
+  <figcaption>Foto: Zulfugar Karimov / Unsplash</figcaption>
+</figure>
+
+<!-- ARTICLE CONTENT -->
+<div class="article-content">
+
+  <!-- Introduction -->
+  <section class="article-section">
+    <p>Criar conteúdo não é mais privilégio de humanos. As máquinas também fazem isso — e essa mudança mexe com uma lógica que organizou a internet durante mais de duas décadas.</p>
+    <p>Até pouco tempo atrás, você acessava um buscador, fazia uma pesquisa e recebia uma lista de sites. O buscador não respondia à sua dúvida. Também não comparava versões nem resumia o assunto. Essa parte ficava por sua conta.</p>
+    <p>Agora, abra o ChatGPT, o Gemini ou o Perplexity e pergunte: "O que esta empresa faz?". Depois, faça uma pergunta mais difícil: "Quais são as principais críticas a essa marca?".</p>
+    <p>A resposta pode combinar o site da empresa, matérias da imprensa, fóruns, bases públicas e conteúdos antigos. Pode também misturar fatos, interpretações de terceiros e afirmações que não aparecem nas fontes citadas.</p>
+    <p>É aqui que nasce um problema novo para a comunicação. Durante muito tempo, o desafio era fazer a mensagem certa chegar ao veículo certo e, por meio dele, ao público desejado. Com a IA, surge uma nova camada de mediação. A máquina lê, seleciona e reconstrói a informação antes de entregá-la ao usuário.</p>
+    <p>A IA começa a operar como meio.</p>
+  </section>
+
+  <!-- Da lista de links à resposta pronta -->
+  <section class="article-section">
+    <h2>Da lista de links à resposta pronta</h2>
+    <p>Uma pesquisa do Pew Research Center ajuda a dimensionar essa mudança. O estudo analisou 68.879 buscas realizadas por 900 adultos nos Estados Unidos. Quando o Google exibia um resumo gerado por IA, os usuários clicavam em um resultado tradicional em 8% das visitas. Sem o resumo, a taxa era de 15%. Os links apresentados dentro do próprio resumo receberam cliques em apenas 1% das visitas.</p>
+    <p>Ou seja: a fonte continua influenciando a resposta, mas o usuário nem sempre chega até ela. E, quando não chega, também não encontra necessariamente as nuances, ressalvas e contextos do conteúdo original.</p>
+    <p>Outro estudo, publicado em maio de 2026 como preprint, analisou 55.393 buscas e 98.020 afirmações presentes nos AI Overviews do Google. Os pesquisadores encontraram um dado interessante: 29,8% dos domínios citados nos resumos não apareciam entre os resultados da primeira página exibida junto com eles. Isso indica que a seleção de fontes da resposta generativa não repete simplesmente o ranking tradicional da busca.</p>
+    <p>O mesmo estudo encontrou um problema mais sensível: 11% das afirmações analisadas não eram sustentadas pelas páginas citadas. Em 4,1% dos casos, havia contradição ou conflito com a fonte. Em outros 7%, a afirmação não aparecia no conteúdo indicado.</p>
+    <p>O estudo ainda não passou por revisão por pares. Mas os resultados ajudam a sustentar uma preocupação concreta:</p>
+    <blockquote class="pull-quote">Aparecer como fonte e ter sua informação reconstruída corretamente são problemas diferentes.</blockquote>
+  </section>
+
+  <!-- As máquinas tomaram a internet -->
+  <section class="article-section">
+    <h2>As máquinas tomaram a internet</h2>
+    <p>A provocação parece exagerada, mas há um dado que merece atenção. Em julho de 2026, a Cloudflare informou que mais da metade do tráfego da internet já era não humano. Isso inclui diferentes tipos de automação — não apenas inteligência artificial — e se refere ao tráfego observado pela infraestrutura da empresa.</p>
+    <p>O número não significa que as pessoas desapareceram da internet. Significa que a rede aberta está sendo percorrida, organizada e consumida em grande escala por máquinas. Robôs indexam páginas. Crawlers coletam conteúdo. Modelos recuperam trechos. Agentes executam tarefas. Sistemas generativos usam essas informações para construir respostas.</p>
+    <p>É o que o relatório <em>The Machine Layer</em>, do Andus Labs, chama de uma camada de máquinas sobre a internet. Uma rede que ainda é feita para pessoas, mas na qual o primeiro leitor do conteúdo pode não ser humano.</p>
+    <p>Para a comunicação, isso cria uma segunda audiência. O texto continua precisando informar, convencer e mobilizar pessoas. Mas os fatos que sustentam a narrativa também precisam ser encontrados e relacionados corretamente por sistemas automatizados.</p>
+  </section>
+
+  <!-- Fale com as máquinas -->
+  <section class="article-section">
+    <h2>Fale com as máquinas</h2>
+    <p>Chris Perry, fundador do Andus Labs, usa uma imagem interessante para explicar essa mudança. A comunicação tradicional organiza conteúdos em "caixas": uma matéria, uma página institucional, um press release, um relatório. Cada peça foi pensada para ser consumida como uma unidade.</p>
+    <p>Em uma rede legível por máquinas, a caixa também precisa funcionar como um nó. O nó é uma informação que a máquina consegue identificar sem precisar adivinhar: quem fez a afirmação, a qual organização ela se refere, quando o dado foi atualizado, qual é a fonte e como aquela informação se conecta às demais.</p>
+    <p>Perry chama isso de <em>machine-readable communication</em>, ou comunicação legível por máquinas. É um conceito emergente, não uma disciplina consolidada. Mas ele ajuda a nomear uma necessidade real: diminuir ambiguidades em um ambiente no qual o conteúdo não é apenas lido. Ele é desmontado e reconstruído.</p>
+    <p>É nesse ponto que entra o <em>Generative Engine Optimization</em>, ou GEO. Enquanto o SEO tenta aumentar a visibilidade de uma página nos mecanismos de busca, o GEO procura aumentar a presença de uma fonte nas respostas dos mecanismos generativos.</p>
+    <p>O termo ganhou base acadêmica em um estudo apresentado na KDD 2024 por pesquisadores de Princeton, Georgia Tech, Allen Institute for AI e IIT Delhi. Nos testes realizados pelos autores, estratégias de GEO aumentaram a visibilidade do conteúdo nas respostas generativas em até 40%. O resultado variou conforme o tema e a estratégia: incluir citações, fontes e dados estatísticos funcionou melhor do que simplesmente repetir palavras.</p>
+    <p>Não existe, porém, uma fórmula para obrigar um modelo a citar uma marca ou reproduzir sua versão dos fatos. GEO não é controle de narrativa. É uma tentativa de tornar a informação mais localizável, verificável e menos ambígua.</p>
+    <blockquote class="pull-quote">Cuidar da reputação passa a incluir também as informações que os sistemas de IA encontram, selecionam e combinam quando respondem sobre uma marca.</blockquote>
+  </section>
+
+  <!-- O que as máquinas valorizam -->
+  <section class="article-section">
+    <h2>O que as máquinas valorizam</h2>
+    <p>Modelos generativos não leem um conteúdo da mesma forma que nós. Eles identificam unidades de informação, relacionam padrões e montam uma resposta de acordo com a pergunta e com as fontes disponíveis naquele momento.</p>
+    <p>Alguns elementos ajudam nesse processo:</p>
+    <ul>
+      <li>afirmações diretas, que deixam claro quem fez o quê;</li>
+      <li>nomes de pessoas, produtos e organizações apresentados de forma consistente;</li>
+      <li>datas de publicação e atualização visíveis;</li>
+      <li>autoria, fonte e metodologia associadas aos dados;</li>
+      <li>evidências originais e referências verificáveis;</li>
+      <li>páginas institucionais que não se contradizem;</li>
+      <li>títulos, subtítulos, listas e tabelas que organizam a informação;</li>
+      <li>dados estruturados e metadados que ajudam a identificar entidades e relações.</li>
+    </ul>
+    <p>Isso não significa escrever para robôs ou transformar o site em uma planilha. A comunicação continua precisando de narrativa. O ponto é outro: os fatos que sustentam essa narrativa precisam estar explícitos.</p>
+    <p>Uma organização também não se torna relevante para a IA apenas porque repete muito a mesma mensagem. Ela aumenta suas chances de ser reconhecida como fonte quando publica informações próprias, é citada por fontes independentes, mantém consistência entre seus canais e responde com clareza a perguntas reais.</p>
+  </section>
+
+  <!-- Como isso afeta as equipes de PR -->
+  <section class="article-section">
+    <h2>Como isso afeta as equipes de PR</h2>
+    <p>Na lógica tradicional das assessorias de imprensa e relações públicas, a informação é trabalhada para se encaixar no veículo e atender às necessidades de seu público. Coloque a informação adequada no veículo correto e a mensagem terá mais chance de chegar a quem precisa recebê-la.</p>
+    <p>Essa lógica não desaparece. A cobertura editorial continua importante porque oferece contexto, validação e fontes independentes. Mas agora o trabalho precisa considerar também o que as máquinas conseguem recuperar dessas informações.</p>
+    <p>Na prática, isso abre algumas tarefas para as equipes de comunicação:</p>
+    <ul>
+      <li>testar o que diferentes sistemas respondem sobre a organização, seus produtos, executivos e controvérsias;</li>
+      <li>identificar erros, lacunas e contradições entre site, newsroom, perfis institucionais, documentos públicos e cobertura da imprensa;</li>
+      <li>transformar informações importantes em páginas de referência, fichas técnicas, FAQs e posicionamentos com fonte e data;</li>
+      <li>produzir dados e análises originais que possam ser citados por veículos, especialistas e sistemas generativos;</li>
+      <li>aproximar PR, conteúdo, SEO, dados e tecnologia para cuidar da mesma arquitetura de informação;</li>
+      <li>acompanhar quais fontes e contextos aparecem nas respostas geradas por IA;</li>
+      <li>atualizar conteúdos antigos que ainda são recuperados, mas já não representam a posição atual da organização.</li>
+    </ul>
+    <p>Não apresento essa lista como uma cartilha consolidada. Trata-se de uma agenda prática derivada das evidências disponíveis e do funcionamento descrito por pesquisadores e profissionais do setor. Ainda estamos aprendendo a medir essa nova camada.</p>
+  </section>
+
+  <!-- Como isso pode afetar a opinião pública -->
+  <section class="article-section">
+    <h2>Como isso pode afetar a opinião pública</h2>
+    <p>Quando uma IA responde antes que o usuário consulte as fontes, ela organiza a ordem dos fatos, escolhe o que ganha espaço e oferece um primeiro enquadramento para o assunto.</p>
+    <p>As evidências disponíveis permitem apontar três efeitos imediatos:</p>
+    <ul>
+      <li>diminui o acesso direto às fontes originais, porque usuários clicam menos quando recebem um resumo gerado por IA;</li>
+      <li>transfere aos sistemas generativos parte da seleção, hierarquização e síntese das informações apresentadas;</li>
+      <li>cria o risco de afirmações sem sustentação serem apresentadas em uma resposta fluente e aparentemente segura.</li>
+    </ul>
+    <p>Isso não significa que a IA determina o que as pessoas pensam. A opinião pública continua sendo formada por experiências, relações sociais, imprensa, influenciadores, instituições e disputas políticas. Também ainda não sabemos com precisão quais serão os efeitos de longo prazo dessa mediação.</p>
+    <p>Mas uma mudança já é visível: cuidar da reputação passa a incluir também as informações que os sistemas de IA encontram, selecionam e combinam quando respondem sobre uma marca.</p>
+  </section>
+
+  <!-- O que a IA fala da sua marca? -->
+  <section class="article-section">
+    <h2>O que a IA fala da sua marca?</h2>
+    <p>Durante anos, as organizações aprenderam a perguntar onde sua marca aparecia, quem falava sobre ela e qual audiência recebia a mensagem. Agora precisam acrescentar uma pergunta: quando uma máquina reconstrói a nossa história, quais informações ela encontra para fazer isso?</p>
+    <p>GEO e comunicação legível por máquinas não são atalhos para controlar modelos. São respostas ainda em construção para um ambiente no qual parte crescente da informação chega às pessoas depois de passar por uma síntese automatizada.</p>
+    <p>O papel do time de comunicação continua familiar: certificar-se de que a informação adequada esteja presente, no contexto correto, para quem precisa recebê-la.</p>
+    <p>O que muda é que, agora, quem recebe primeiro pode não ser uma pessoa.</p>
+  </section>
+
+  <!-- Fontes -->
+  <section class="article-section sources-section">
+    <h2>Fontes</h2>
+    <ol>
+      <li>Chapekis, Athena; Lieb, Anna. "Do people click on links in Google AI summaries?". Pew Research Center, 22 jul. 2025. <a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/" target="_blank" rel="noopener">pewresearch.org</a></li>
+      <li>Xu, Haofei; Iqbal, Umar; Montgomery, Jacob M. "Measuring Google AI Overviews: Activation, Source Quality, Claim Fidelity, and Publisher Impact". arXiv, 13 maio 2026. Preprint não revisado por pares. <a href="https://arxiv.org/abs/2605.14021" target="_blank" rel="noopener">arxiv.org</a></li>
+      <li>Cloudflare. "Content Independence Day, one year on: building the business model for the agentic Internet", 1º jul. 2026. <a href="https://blog.cloudflare.com/agentic-internet-bot-report/" target="_blank" rel="noopener">blog.cloudflare.com</a></li>
+      <li>Aggarwal, Pranjal et al. "GEO: Generative Engine Optimization". Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2024. <a href="https://dl.acm.org/doi/10.1145/3637528.3671900" target="_blank" rel="noopener">dl.acm.org</a></li>
+      <li>Perry, Chris. "Boxes and Nodes", 18 jun. 2026. <a href="https://www.linkedin.com/pulse/boxes-nodes-chris-perry-lp0qc/" target="_blank" rel="noopener">linkedin.com</a></li>
+      <li>Andus Labs. "The Machine Layer: When AI Rewrites the Rules of Content and Communication", 2025.</li>
+    </ol>
+    <div class="editorial-note">
+      <h3>Nota editorial sobre as fontes</h3>
+      <p>O estudo do Pew mede comportamento de busca de adultos nos Estados Unidos e não deve ser generalizado automaticamente para todos os países ou produtos de IA. O trabalho de Xu, Iqbal e Montgomery é um preprint sobre os AI Overviews do Google, não sobre todos os modelos generativos. O relatório do Andus Labs combina pesquisa própria, dados secundários e informações proprietárias; por isso, foi usado para apresentar o conceito de machine layer, e não como fonte principal dos números do artigo. As recomendações para equipes de PR são implicações profissionais derivadas dessas evidências, não resultados diretamente testados pelos estudos citados.</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CTA -->
+  <section style="text-align: center; padding: 3rem 0;">
+    <h2 class="display" style="margin-bottom: 1rem;">Sua marca está sendo lida pelas máquinas certas?</h2>
+    <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 580px; margin-left: auto; margin-right: auto;">
+      Entre em contato para discutir como construir uma presença que funciona tanto para pessoas quanto para sistemas de IA.
+    </p>
+    <a href="https://www.linkedin.com/in/henriquepaludetto/" target="_blank" rel="noopener" style="display: inline-block;">
+      <button class="btn-primary">Vamos conversar</button>
+    </a>
+  </section>
+
+</div>
+
+<hr class="divider" />
+
+<!-- FOOTER CAPTURE -->
+<div class="footer-capture" id="newsletter">
+  <h2>
+    Insights sobre comportamento, cultura e dados que ajudam marcas, política e causas a ganhar força.
+  </h2>
+  <p>143 analistas e diretores já assinaram.</p>
+  <div class="footer-form">
+    <input type="email" placeholder="seu@email.com" />
+    <button class="btn-primary">Quero receber</button>
+  </div>
+  <p class="footer-meta-center">Sem frequência forçada · Zero spam · Cancele quando quiser</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Narrativa<span>.</span>Social</div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/henriquepaludetto/" target="_blank">LinkedIn</a>
+    <a href="https://tagarelo.com.br" target="_blank">tagarelo.com.br</a>
+    <a href="privacidade.html">Política de privacidade</a>
+  </div>
+  <span class="footer-copy">© 2026</span>
+</footer>
+
+</body>
+</html>
