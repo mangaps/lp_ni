@@ -81,5 +81,13 @@
     <loc>https://narrativasocial.com/privacidade.html</loc>
   </url>
 
+  <!-- Study - PT and EN -->
+  <url><loc>https://narrativasocial.com/estudo-cobertura-flavio-bolsonaro.html</loc><lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/estudo-cobertura-flavio-bolsonaro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/estudo-cobertura-flavio-bolsonaro-en.html" />
+  </url>
+  <url><loc>https://narrativasocial.com/estudo-cobertura-flavio-bolsonaro-en.html</loc><lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://narrativasocial.com/estudo-cobertura-flavio-bolsonaro.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://narrativasocial.com/estudo-cobertura-flavio-bolsonaro-en.html" />
+  </url>
 </urlset>
-google-site-verification: google7ff8b4fe57befa86.html
