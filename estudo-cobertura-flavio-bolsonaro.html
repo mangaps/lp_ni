@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Estudo: O que mudou na reputação de Flávio Bolsonaro? | Narrativa Social</title>
+<meta name="description" content="Estudo sobre como a imagem de Flávio Bolsonaro foi retratada pela imprensa em dois momentos: antes e após o segundo turno das eleições de 2026." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  .article-hero {
+    min-height: 50vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 1rem 2.5rem 1rem;
+    max-width: 860px; margin: 0 auto;
+    position: relative;
+  }
+  .article-hero::before {
+    content: '';
+    position: absolute; top: -40px; right: -200px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(200,137,42,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .article-hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.75rem;
+    max-width: 680px;
+  }
+  .article-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin-bottom: 0;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .article-content {
+    max-width: 860px; margin: 0 auto;
+  }
+
+  section {
+    padding: 1rem 2.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .article-section {
+    margin-bottom: 1.75rem;
+  }
+  .article-section h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .article-section p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    max-width: 740px;
+  }
+  .article-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0.75rem;
+  }
+  .article-section ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  .article-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .pull-quote {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text);
+    border-left: 2px solid var(--accent);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    max-width: 580px;
+    line-height: 1.5;
+  }
+
+  .article-img {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 2.5rem 1rem;
+  }
+  .article-img img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .article-img figcaption {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  .sources-section {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .sources-section h2 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  .sources-section ol {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: source-counter;
+    margin-bottom: 1.5rem;
+  }
+  .sources-section ol li {
+    counter-increment: source-counter;
+    padding-left: 1.75rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1.7;
+    max-width: 700px;
+  }
+  .sources-section ol li::before {
+    content: counter(source-counter) '.';
+    position: absolute;
+    left: 0;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+  }
+  .sources-section a {
+    color: var(--accent);
+  }
+  .sources-section a:hover { text-decoration: underline; }
+
+  .editorial-note {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .editorial-note h3 {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.75rem;
+  }
+  .editorial-note p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .hsform-frame {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 680px) {
+    .article-hero {
+      padding: 3rem 2.5rem 2rem;
+      min-height: auto;
+    }
+    .article-hero h1 { font-size: 1.8rem; }
+    .article-img img { height: 220px; }
+  }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2D0FBN1YD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H2D0FBN1YD');
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" style="text-decoration: none; color: inherit;" class="nav-logo">Narrativa<span>.</span>Social</a>
+  <div class="nav-links">
+    <a href="index.html#sobre">O que fazemos</a>
+    <a href="index.html#blog">Artigos</a>
+    <a href="https://www.tagarelo.com.br" target="_blank">Tagarelo</a>
+    <a href="index.html#newsletter">
+      <button class="btn-nav">Receber newsletter</button>
+    </a>
+    <a href="estudo-cobertura-flavio-bolsonaro-en.html" style="margin-left: 1rem; padding-left: 1rem; border-left: 1px solid var(--border); color: var(--text-muted);">EN</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <p class="hero-eyebrow">Estudo</p>
+  <h1>O que mudou na reputação de Flávio Bolsonaro?</h1>
+  <p class="article-subtitle">Estudo de comunicação e reputação | Narrativa Social + Tagarelo</p>
+</div>
+
+<!-- ARTICLE IMAGE -->
+<figure class="article-img">
+  <img src="assets/capa-estudo-flávio-tagarelo.png" alt="Capa do estudo de cobertura de Flávio Bolsonaro" />
+</figure>
+
+<!-- ARTICLE CONTENT -->
+<div class="article-content">
+
+  <!-- Introduction -->
+  <section class="article-section">
+    <p>Como a imagem de uma liderança política pode mudar na cobertura jornalística em apenas uma semana?</p>
+    <p>Para investigar essa questão, a Narrativa Social produziu um estudo sobre como o senador Flávio Bolsonaro foi retratado pela imprensa em dois momentos: 21 de outubro de 2026, quarta-feira anterior ao segundo turno das eleições, e 28 de outubro, quarta-feira seguinte à votação.</p>
+    <p>O levantamento analisou 327 publicações da Folha de S. Paulo, O Estado de S. Paulo, O Globo e Valor Econômico.</p>
+    <p>O objetivo foi compreender não apenas como mudou o sentimento das matérias, mas também quais assuntos passaram a dominar o noticiário e quais questões reputacionais ganharam destaque.</p>
+  </section>
+
+  <!-- Methodology -->
+  <section class="article-section">
+    <h2>Como realizamos a análise</h2>
+    <p>Utilizamos o <a href="https://www.tagarelo.com.br/" target="_blank">Tagarelo</a> para classificar as publicações por sentimento reputacional, tonalidade, temas e tópicos.</p>
+    <p>A partir dessas classificações, a Narrativa Social cruzou os resultados e desenvolveu a interpretação, identificando diferenças entre os dois períodos e os veículos analisados.</p>
+    <p>O estudo combina a aplicação de critérios em escala com a análise profissional dos resultados.</p>
+  </section>
+
+  <!-- Findings -->
+  <section class="article-section">
+    <h2>O que encontramos?</h2>
+    <blockquote class="pull-quote">A participação das matérias desfavoráveis passou de 69% para 98% em apenas uma semana.</blockquote>
+    <p>Em 21 de outubro, 31% das publicações foram classificadas como favoráveis, categoria que também inclui referências consideradas neutras na metodologia do estudo. Em 28 de outubro, essa participação caiu para apenas 2%.</p>
+    <p>Mas a mudança não aconteceu apenas no sentimento da cobertura.</p>
+    <p>Antes do segundo turno, pesquisas de intenção de voto e estratégias eleitorais representavam aproximadamente 46% das matérias analisadas. A cobertura também destacava a competitividade eleitoral, a mobilização de apoiadores e os questionamentos sobre propostas e transparência.</p>
+    <p>Uma semana depois, a agenda jornalística havia mudado significativamente.</p>
+    <p>A saída do Brasil e a carta pública passaram a concentrar aproximadamente 59% das publicações, acompanhadas por questionamentos sobre a consistência da comunicação, a credibilidade das decisões e a capacidade de liderança do senador.</p>
+    <p>O estudo também identificou diferenças na intensidade da cobertura desfavorável entre os jornais no primeiro período. No segundo, essa classificação passou a predominar de maneira muito mais homogênea nos quatro veículos.</p>
+  </section>
+
+  <!-- Implications -->
+  <section class="article-section">
+    <h2>O que isso revela para a comunicação?</h2>
+    <p>O levantamento demonstra a importância de analisar a cobertura jornalística para além do volume de publicações ou da quantidade de menções.</p>
+    <p>Compreender quais assuntos ganham protagonismo, como são apresentados e quais questões passam a ser associadas à imagem de uma pessoa ou organização ajuda a identificar mudanças na exposição reputacional.</p>
+    <p>Para profissionais de comunicação, relações públicas e inteligência, esse tipo de análise pode contribuir para diagnósticos mais consistentes e decisões mais bem fundamentadas.</p>
+    <p>É importante ressaltar que os resultados descrevem a cobertura dos quatro jornais nas datas selecionadas. O estudo não mede a opinião da população nem permite concluir, isoladamente, o posicionamento editorial dos veículos.</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="article-section">
+    <h2>Receba o estudo completo</h2>
+    <p>O levantamento foi produzido pela <strong>Narrativa Social</strong>, empresa de inteligência e analytics para comunicação, utilizando o <strong><a href="https://www.tagarelo.com.br/" target="_blank">Tagarelo</a></strong>, ferramenta que permite classificar e analisar textos em escala com critérios definidos pelo profissional.</p>
+    <p>O relatório completo apresenta a metodologia, as principais descobertas, as diferenças entre os veículos e as implicações para a comunicação.</p>
+    <p><strong>Quer conhecer a análise completa?</strong></p>
+    <p>Cadastre seu e-mail e escolha o idioma para receber o estudo de 12 páginas, disponível em português e inglês.</p>
+  </section>
+
+</div>
+
+<!-- CTA FORMULÁRIO -->
+<div style="max-width: 860px; margin: 0 auto; padding: 3rem 2.5rem; text-align: center;">
+  <a href="https://uxtmk.share.hsforms.com/2n3GmQdydTiiz-lZ3UwtOzQ" target="_blank" rel="noopener">
+    <button class="btn-primary" style="cursor: pointer;">Receber o estudo completo</button>
+  </a>
+</div>
+
+<hr class="divider" />
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Narrativa<span>.</span>Social</div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/henriquepaludetto/" target="_blank">LinkedIn</a>
+    <a href="https://tagarelo.com.br" target="_blank">tagarelo.com.br</a>
+    <a href="privacidade.html">Política de privacidade</a>
+  </div>
+  <span class="footer-copy">© 2026</span>
+</footer>
+
+</body>
+</html>
